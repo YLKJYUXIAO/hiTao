@@ -1,0 +1,568 @@
+
+*{
+	padding:0;
+	margin:0;
+}
+img{
+	border: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*顶部登录注册部分*/
+#headBox{
+	width:100%;
+	height:30px;
+	background-color: #f4f4f4;
+}
+#headBox .head{
+	width:1190px;
+	height:25px;
+	padding:5px;
+	margin:0 auto;	
+}
+#headBox .login li,#headBox .myServe li,#headBox .login{
+	float:left;
+}
+#headBox .login li{
+	margin-left:10px;
+	font:12px/25px "微软雅黑";
+	color: #666;
+}
+#headBox li a{
+	font:12px/25px "微软雅黑";
+	color: #666;
+}
+#headBox li a:hover{
+	color: red;
+}
+#headBox .login em{
+	display: inline-block;
+	width:14px;
+	height:18px;
+	background: url(img/beijing.png) no-repeat -176px 0px;
+}
+#headBox .myServe{
+	float:right;
+}
+#headBox .myServe a{
+	margin:0 15px;
+}
+#headBox .myServe i{
+	font-style: normal;
+	font:12px "微软雅黑";
+}
+
+/*logo和搜索部分*/
+#logoBox{
+	width:100%;
+	height:110px;
+	background:url(img/bg_head.jpg) no-repeat -150px 0px;
+}
+#logoBox .logo{
+	width:1190px;
+	height:95px;
+	padding-top:15px;
+	margin:0 auto;
+	position: relative;
+}
+#logoBox .mark{
+	width:1190px;
+	height:95px;
+	position: absolute;
+	filter:alpha(opacity=0);
+	opacity: 0;
+	z-index:1;
+}
+#logoBox .logo h2,#logoBox .logo h3{
+	float:left;
+}
+#logoBox .logo h3{
+	margin-top:20px;
+}
+#logoBox .search{
+	margin-left:70px;
+	margin-top:20px;
+	float:left;
+	width:600px;
+	height:70px;
+	position: relative;
+	z-index:10;
+}
+/*输入框*/
+#logoBox .txt{
+	width:440px;
+	height:35px;
+	padding-left:25px;
+	float:left;
+	border: 2px solid #e10482;
+	outline: none;
+}
+/*搜索按钮*/
+#logoBox .btn{
+	float:left;
+	width:100px;
+	height:39px;
+	border: none;
+	color: #fff;
+	font:14px "微软雅黑";
+	background-color: #e10482;
+	outline: none;
+}
+#logoBox .search em{
+	position: absolute;
+	left:5px;
+	top:12px;
+}
+/*隐藏的搜索预选项*/
+#logoBox .hideSs{
+	width:468px;
+	background-color: #fff;
+	border: 1px solid #666666;
+	border-top:none;
+	position: absolute;
+	left:0px;
+	top:39px;
+	z-index:10;
+	/*display: none;*/
+}
+#logoBox .hideSs li{
+	width:463px;
+	height:20px;
+	font:14px/20px "微软雅黑";
+	color: #666;
+	padding-left:5px;
+	cursor: pointer;	
+}
+/*搜索框下方的菜单*/
+#logoBox .search_btm{
+	overflow: hidden;
+	width:445px;
+	height:30px;
+}
+#logoBox .search_btm li{
+	float:left;
+	font:12px "微软雅黑";	
+}
+#logoBox .search_btm a{
+	margin:0 3px;
+	color: #b3b2b2;
+}
+#logoBox .search_btm a:hover{
+	color:red;
+}
+#logoBox .search_btm i{
+	font-style: normal;
+	font-size: 10px;
+	color: #b3b2b2;
+}
+
+/*导航栏部分*/
+#navBox{
+	width:100%;
+	height:38px;
+	background-color: #000;	
+}
+#navBox .nav{
+	width:1190px;
+	height:38px;
+	margin: 0 auto;
+	position: relative;
+}
+#navBox .nav p{
+	float:left;
+	height:38px;
+}
+#navBox .nav p a{
+	font:16px/38px "微软雅黑";
+	color: #fff;
+	margin: 0 20px;
+}
+#navBox .nav p:hover{
+	background-color: #de0ba0;
+}
+#navBox .navRight{
+	float:right;
+	margin-right:10px;
+	width:90px;
+	font:16px/38px "微软雅黑";	
+	color: #fff;
+	cursor: pointer;
+}
+#navBox .navRight em{
+	float:left;
+	width:25px;
+	height:17px;
+	background: url(img/nav1.png) no-repeat ;
+	margin-top:10px;
+}
+#navBox .navRight em.show{
+	background: url(img/nav2.gif) no-repeat ;
+}
+
+/*隐藏的导航栏*/
+#navBox .navHide{
+	width:720px;
+	height:455px;
+	/*border: 1px solid #000000;*/
+	position: absolute;
+	right:10px;
+	top:40px;
+	z-index:10;
+	display: none;
+}
+#navBox .hideLeft{
+	float:left;
+	width:180px;
+	height:400px;
+	border-radius: 10px;
+	background-color: #f5f5f5;
+}
+#navBox .hideLeft li{
+	position: relative;
+	width:180px;
+	height:50px;
+	font:16px/50px "微软雅黑";	
+}
+#navBox .hideLeft li:hover{
+	background-color: #000;
+	
+}
+#navBox .hideLeft li img{
+	position: absolute;
+	top:14px;
+	left:15px;
+}
+#navBox .hideLeft li a{	
+	margin-left:55px;
+	color: #000;	
+}
+#navBox .hideLeft li:hover a{
+	color: #fff;
+}
+#navBox .hideLeft li:hover i{
+	position: absolute;
+	right:-10px;
+	top:15px;
+	border-top:10px solid rgba(204,0,0,0);
+	border-bottom:10px solid rgba(204,0,0,0);
+	border-left:10px solid #000;
+	z-index:5;	
+}
+
+/*隐藏的导航栏 右侧部分*/
+#navBox .hideRight{
+	float:left;
+	width:540px;
+	/*overflow: hidden;	*/
+	/*min-height: 450px;*/
+	position: relative;
+}
+#navBox .itemBox{
+	width:540px;
+	display: inline-block;
+}
+#navBox .item{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:540px;	
+	background-color: #fff;
+	display: none;
+}
+#navBox .item.navshow{
+	display: block;
+}
+#navBox .item li{
+	position: absolute;
+	margin-top:15px;
+	padding:0 20px;
+	width:230px;	
+}
+
+#navBox .item li h3{
+	/*height:18px;*/
+	font:bold 14px "微软雅黑";
+	border-bottom: 2px solid #000;
+}
+#navBox .item li h3:hover{
+	color: red;
+	text-decoration:underline;
+}
+#navBox .item li a{
+	font:12px "微软雅黑";
+	color: #666;
+	float: left;	
+	margin:15px 15px 0 0;
+}
+#navBox .item li a:hover{
+	color: red;
+	text-decoration:underline;
+}
+/*导航栏底部*/
+#navBox .hideRight-bottom{
+	width:510px;
+	height:35px;		
+	border-bottom: 1px solid #666;
+	margin-bottom:10px;
+	margin-left:20px;
+}
+#navBox .hideRight-bottom img{
+	margin-left:418px;	
+}
+/*sideBar部分*/
+
+#sideBar{
+	width:35px;
+	height:700px;
+	position: fixed;
+	right:0px;
+	top:0px;
+	background-color: #000;
+	z-index:20;
+}
+
+#sideBar ul{
+	margin-top:150px;
+}
+#sideBar ul li{
+	position: relative;
+}
+
+
+/*servce*/
+#sideBar .servce{
+	height:120px;
+	background: url(img/beijing.png) no-repeat -35px 0px;
+}
+#sideBar .servce span{
+	position: absolute;
+	right:50px;
+	top:0px;
+	display: block;
+	padding:20px 20px 0 10px;
+	width:100px;
+	height:100px;
+	background-color: #fff;
+	font:12px "微软雅黑";
+	display: none;
+}
+#sideBar .servce span em,#sideBar .collect span em,#sideBar .coupon span em,#sideBar .code span em{
+	position: absolute;
+	right: -10px;
+	bottom: 2px;
+	border-top:10px solid rgba(204,0,0,0);
+	border-bottom:10px solid rgba(204,0,0,0);
+	border-left:10px solid #fff;
+}
+/*购物车*/
+#sideBar .cart{
+	position: relative;
+	height:120px;
+	background: url(img/beijing.png) no-repeat 0px -120px;
+}
+#sideBar .cart:hover{
+	background: url(img/beijing.png) no-repeat -35px -120px;
+}
+#count{
+	position: absolute;
+	left:8px;
+	top:89px;
+	width:20px;
+	height:20px;
+	font:10px/20px "微软雅黑";
+	color: red;
+	text-align: center;
+}
+/*我的收藏*/
+#sideBar .collect{
+	margin-top:10px;
+	height:30px;
+	background: url(img/beijing.png) no-repeat 0px -240px;
+}
+#sideBar .collect:hover{
+	background: url(img/beijing.png) no-repeat -35px -241px;
+}
+#sideBar .collect span{
+	position: absolute;
+	right:50px;
+	top:0px;
+	font:14px/30px "微软雅黑";
+	color: red;
+	width:100px;
+	height:30px;
+	background-color: #fff;
+	text-align: center;
+	display: none;
+}
+/*我的优惠券*/
+#sideBar .coupon{
+	margin-top:10px;
+	height:30px;
+	background: url(img/beijing.png) no-repeat 0px -270px;
+}
+#sideBar .coupon:hover{
+	background: url(img/beijing.png) no-repeat -35px -274px;
+}
+#sideBar .coupon span{
+	position: absolute;
+	right:50px;
+	top:0px;
+	font:14px/30px "微软雅黑";
+	color: red;
+	width:100px;
+	height:30px;
+	background-color: #fff;
+	text-align: center;
+	display: none;
+}
+/*二维码*/
+#sideBar .code{
+	margin-top:100px;
+	height:33px;
+	background: url(img/beijing.png) no-repeat 0px -300px;
+}
+#sideBar .code:hover{
+	background: url(img/beijing.png) no-repeat -35px -305px;
+}
+#sideBar .code span{
+	position: absolute;
+	right:50px;
+	top:-100px;	
+	width:99px;
+	height:130px;
+	display: none;
+}
+#sideBar .goTop{	
+	height:30px;
+	background: url(img/beijing.png) no-repeat 0px -335px;
+}
+#sideBar .goTop:hover{	
+	background: url(img/beijing.png) no-repeat -35px -337px;
+}
+
+
+/*尾部引导部分*/
+#guideBox{
+	width:100%;
+	height:205px;
+	background-color: #fff;
+}
+#guideBox .guide{
+	width:1190px;
+	height:170px;	
+	margin:0 auto;
+	padding-top:35px;
+}
+#guideBox .guide ul,#guideBox .Gcode{
+	float:left;
+}
+#guideBox .guide li{
+	float:left;
+	width:165px;
+	height:115px;
+	text-align: center;
+}
+#guideBox .guide li h3{
+	font: bold 16px "微软雅黑";
+	color:#B3B2B2;
+	margin-bottom: 10px;
+}
+#guideBox .guide li a{
+	display: block;
+	font:12px "微软雅黑";
+	color: #000;
+	margin-top:5px;
+}
+#guideBox .guide li a:hover{
+	color: red;
+	text-decoration: underline;
+}
+#guideBox .Gcode{
+	margin-left:100px;
+	width:115px;
+	height:135px;
+	text-align: center;
+}
+#guideBox .Gcode p{
+	margin-bottom: 10px;
+}
+/*公司简介*/
+#profixBox{
+	width:100%;
+	height:38px;
+	background-color: #000;
+}
+#profixBox .profix{
+	width:1190px;
+	height:38px;
+	margin:0 auto;
+}
+#profixBox .phone,#profixBox .phone img,#profixBox .phone h4{
+	float:left;
+}
+#profixBox .phone h4{
+	margin:5px 0 0 5px;
+	color: #e30485;
+}
+#profixBox ul{
+	float:right;
+}
+#profixBox ul li{
+	float:left;
+	width:70px;
+	height:38px;
+	line-height: 38px;
+	text-align: center;	
+}
+#profixBox ul li:hover{
+	background-color: #DE0BA0;
+}
+#profixBox ul li a{
+	font:12px "微软雅黑";
+	color: #fff;
+}
+
+/*尾部*/
+
+#footBox{
+	width:100%;
+	height:130px;
+	background-color: #fff;
+}
+#footBox .foot{
+	width:1190px;
+	height:130px;
+	margin:0 auto;
+}
+#footBox .foot p{
+	width:1190px;
+	height:60px;
+	text-align: center;
+	font:12px/60px "微软雅黑";
+	color: #B3B2B2;
+}
+#footBox .footImg{
+	width:1190px;
+	height:47px;
+	border: 1px solid #ccc;
+}
+#footBox .ImgBox{
+	width:810px;
+	height:47px;	
+	margin:5px auto;
+}
+#footBox .ImgBox a{
+	display: block;
+	float:left;
+	height:35px;
+}
+#footBox .ImgBox a+a{
+	border-left:1px solid #ccc;
+}
+#footBox .ImgBox a img{
+	margin:0 30px;
+}

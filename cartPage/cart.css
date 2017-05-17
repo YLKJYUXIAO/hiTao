@@ -1,0 +1,317 @@
+/*购物车部分*/
+*{
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+}
+#cartBox{
+	width:100%;
+	/*height:1110px;*/
+	background-color: #fff;
+	border-top: 2px solid #000;
+	overflow: hidden;
+}
+#cartBox .cart{
+	width:1000px;
+	/*height:730px;*/
+	padding-top: 20px;
+	margin: 0 auto;	
+	overflow: hidden;
+}
+#cartBox .headImg{
+	width:535px;
+	height:80px;
+	margin: 0 auto;
+	background: url(img/stepcart.png) no-repeat 0px 0px;
+}
+#cartBox .headImg h2{
+	width:41px;
+	height:43px;
+	background: url(img/stepcart2.png) no-repeat 0px 0px;
+}
+#cartBox .headImg ul{
+	width:535px; 
+	height:35px;
+}
+#cartBox .headImg li{
+	float: left;
+	font:14px/30px "微软雅黑";
+}
+#cartBox .headImg li+li{
+	margin-left: 170px;
+}
+#cartBox .headTit{
+	width:1000px;
+	height:40px;
+	background-color: #eee;	
+	font:bold 14px/40px "微软雅黑";
+}
+/*表头左侧*/
+#cartBox .titFirst{
+	float: left;
+	width:565px;
+	height:40px;
+}
+#cartBox .titFirst li,#cartBox .titTwo li{
+	float:left;
+}
+#cartBox .titFirst li+li{	
+	margin-left: 230px;
+}
+/*表头右侧*/
+#cartBox .titTwo{
+	float: left;
+	width:435px;
+	height:40px;
+}
+#cartBox .titTwo li{
+	margin-left: 105px;
+}
+
+/*商品待选项*/
+#cartBox .proItem{
+	width:1000px;
+	height: 240px;
+}
+#cartBox .proItem h3{
+	width:1000px;
+	height:40px;
+	border-bottom:2px solid #666; 
+	font: 16px/40px "微软雅黑";
+}
+/*商品操作*/
+#cartBox .mesList{
+	width:1000px;
+	height:165px;
+	border: 1px solid #ccc;
+	font:14px "微软雅黑";
+	margin-top:10px;
+	padding-top: 15px;
+}
+#cartBox .check{
+	display: block;
+	margin:50px 5px 0 14px;
+}
+#cartBox .mesList img{
+	display: block;
+	width:100px;
+	height:100px;
+	border: 1px solid #ccc;
+}
+#cartBox .mesList h4{
+	width:370px;
+	height:50px;
+	font-weight: normal;
+	padding-left: 10px;
+}
+#cartBox .mesList h4:hover{
+	color: #E30485;
+	text-decoration: underline;
+}
+#cartBox .mesList i{
+	display: block;
+	width:80px;
+	height:30px;
+	font-weight: bold;
+	margin-top: 50px;
+}
+#cartBox .btnBox{
+	width:80px;
+	height:25px;
+	margin: 50px 70px 0 55px;
+	border: 1px solid #ccc;
+}
+#cartBox .btnBox a ,#cartBox .btnBox input{
+	float: left;
+}
+#cartBox .btnBox a{
+	display: block;
+	width:24px;
+	height:25px;
+	text-align: center;
+} 
+/*左按钮*/
+#prev{
+	border-right: 1px solid #ccc;
+}
+/*右按钮*/
+#next{
+	border-left: 1px solid #ccc;
+}
+#cartBox .btnBox input{
+	display: block;
+	width:30px;
+	height:20px;
+	text-align: center;
+	border: none;
+	outline: none;
+}
+#cartBox .subtot{
+	display: block;
+	width:80px;
+	height:30px;
+	font-weight: bold;
+	color: #E30485;
+	margin-top:50px;
+}
+#cartBox .del{
+	display: block;
+	width:15px;
+	height:15px;
+	background: url(img/del.jpg) no-repeat;
+	margin:50px 0 0 60px;
+}
+#cartBox .mesList h5{
+	width:150px;
+	height:40px;
+	border-top: 1px solid #ccc;
+	margin-top:20px;
+	padding:13px 0 0 850px;
+	font-weight: normal;
+	color: #ccc;
+}
+#cartBox .mesList h5 em{
+	font-weight: bold;
+}
+#cartBox .mesList h5,#cartBox .del,#cartBox .subtot,#cartBox .mesList i,#cartBox .btnBox,#cartBox .mesList h4,#cartBox .mesList img,#cartBox .check{
+	float: left;
+}
+/*去结算*/
+#cartBox .goPay{
+	width:1000px;
+	height:85px;
+	margin-top: 15px;
+}
+#cartBox dd{
+	float: left;
+}
+#cartBox .goShop{
+	width:60px;
+	height:30px;
+	font:14px/30px "微软雅黑";
+	margin-top:25px;
+	padding-left:30px;
+	background: url(img/goshop.jpg) no-repeat;
+}
+#cartBox .goShop a{
+	color: #000;
+}
+#cartBox .goShop:hover a{
+	color: #E30485;
+}
+#cartBox .tolPrice{
+	width:440px;
+	height:70px;
+	font:14px/30px "微软雅黑";
+	margin-left: 300px;
+}
+#cartBox .tolPrice i{
+	color: #E30485;
+}
+#cartBox .tolPrice h3 em{
+	font:24px/30px "微软雅黑";
+	color: #E30485;
+}
+#cartBox .tolPrice h4{
+	color: #666;
+	margin-left: 140px;
+}
+#cartBox .pay{
+	width:170px;
+	height:40px;
+	border-radius: 20px;
+	background-color: #E30485;
+	text-align: center;
+}
+#cartBox .pay a{
+	font:14px/40px "微软雅黑";
+	color: #fff;
+}
+/*购物车空*/
+#cartBox .empty{
+	width:1000px;
+	height:300px;
+	margin:0 auto;
+	padding-top: 100px;
+	display: none;
+}
+#cartBox .empty img{
+	width:95px;
+	height:85px;
+	display: block;
+	margin-left:430px;
+}
+#cartBox .empty h2{
+	width:150px;
+	height:25px;
+	font:bold 25px "微软雅黑";
+	color: #666;
+	margin:20px 0 0 400px;
+}
+#cartBox .empty h3{
+	width:180px;
+	height:20px;
+	font:16px/20px "微软雅黑";
+	margin:10px 0 0 390px;
+}
+#cartBox .empty h4{
+	width:225px;
+	height:45px;
+	border: 2px solid #E30485;
+	border-radius: 23px;
+	text-align: center;
+	margin:40px 0 0 360px;
+}
+#cartBox .empty h4 a{
+	font:18px/45px "微软雅黑";
+	color: #E30485;
+}
+
+/*热销推荐*/
+#cartBox .hotCake{
+	width:1000px;
+	height:320px;
+	margin: 0 auto;
+}
+#cartBox .hotCake h2{
+	width:980px;
+	height:30px;
+	padding-left: 20px;
+	border-bottom: 2px solid #000;
+	font:14px/30px "微软雅黑";
+}
+#cartBox .prodList{
+	float: left;
+	width:200px;
+	height:315px;
+}
+#cartBox .prodList img{
+	width:200px;
+	height:200px;
+}
+#cartBox .prodList span{
+	display: block;
+	width:150px;
+	height:40px;
+	font:12px/20px "微软雅黑";
+	margin-left: 30px;
+}
+#cartBox .prodList h3{
+	width:85px;
+	height;35px;
+	font:bold 14px/35px "微软雅黑";
+	color: #E30485;
+	margin-left: 30px;
+}
+#cartBox .prodList h4{
+	width:110px;
+	height:35px;
+	border: 1px solid #E30485;
+	border-radius: 18px;
+	text-align: center;
+	font:14px/35px "微软雅黑";
+	margin-left: 30px;
+}
+#cartBox .prodList h4 a{
+	color: #E30485;
+}

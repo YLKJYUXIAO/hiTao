@@ -1,0 +1,204 @@
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+#logoBox{
+	width:100%;
+	height:144px;
+	background:url(img/bg_head.jpg) no-repeat -150px 0px;
+}
+#logoBox .logo{
+	width:1190px;
+	height:109px;
+	padding-top:35px;
+	margin:0 auto;
+}
+#logoBox .logo h2,#logoBox .logo h3{
+	float:left;
+}
+#logoBox .logo h3{
+	margin-top:20px;
+}
+
+/*第二部分*/
+#joinBox{
+	width:100%;
+	height:150px;
+	background-color: #f5f5f5;
+}
+#joinBox .join{
+	width:990px;
+	height:100px;
+	padding-top:50px;
+	margin:0 auto;
+}
+#joinBox h3{
+	float:left;
+	width:160px;
+	height:45px;
+	background:url(../img/login.png) no-repeat 0px 0px;
+}
+#joinBox h4{
+	float:left;
+	width:85px;
+	height:35px;
+	padding-top:5px;
+	margin-left:20px;
+	font:14px "微软雅黑";
+}
+#joinBox span{
+	float:right;
+	font:14px "微软雅黑";
+	padding-top:10px;
+}
+#joinBox h5{
+	float:right;
+	width:75px;
+	height:24px;
+	border: 1px solid #E30485;
+	border-radius: 25px;
+	text-align: center;
+	padding-top:6px;
+	background-color: #fff;
+	cursor: pointer;
+}
+#joinBox h5:hover{
+	background-color: #E30485;
+}
+#joinBox h5 a{
+	color: #E30485;
+	font:14px "微软雅黑";
+}
+#joinBox h5:hover a{
+	color: #fff;
+}
+
+/*主体部分*/
+#mainBox{
+	width:100%;
+	height:635px;
+	background-color: #fff;
+}
+#mainBox .main{
+	width:990px;
+	height:585px;
+	padding-top:50px;
+	margin: 0 auto;
+}
+#mainBox img{
+	display: block;
+	float: left;
+}
+#mainBox .selBox{
+	float: left;
+	width:340px;
+	height:585px;
+}
+#mainBox .item{
+	width:340px;
+	height:400px;
+	display: none;
+}
+#mainBox .item.show{
+	display: block;
+}
+#mainBox .item p{
+	width:340px;
+	height:52px;	
+	margin-top:30px;
+	position: relative;
+}
+#mainBox .item p.bord{
+	border: 2px solid #666;
+}
+/*tip部分*/
+#mainBox .item p i{
+	display: inline-block;
+	width:310px;
+	height:16px;
+	background:url(img/tip.jpg) no-repeat; 
+	position: absolute;
+	left:0px;
+	top:60px;
+	padding-left:30px;
+	font: normal 14px/16px "微软雅黑";
+	color: #E30485;
+	display: none;
+}
+
+
+#mainBox .item p span{
+	float:left;
+	width:75px;
+	height:50px;
+	text-align: center;
+	font:14px/50px "微软雅黑";
+	background-color: #f5f5f5;
+	border: 1px solid #666;
+	border-right:none ;
+}
+/*输入框*/
+#mainBox .item p input{
+	float:left;
+	width:260px;
+	height:48px;
+	outline: none;
+}
+/*下一步和注册按钮*/
+#mainBox .item h4{
+	width:160px;
+	height:40px;
+	margin:80px 0 0 90px;
+	border-radius: 40px;
+	background-color: #666;
+	text-align: center;
+	cursor: pointer;
+}
+#mainBox .item h4 a{
+	font:14px/40px "宋体";
+	color: #fff;
+}
+/*图形码*/
+#mainBox .graph em{
+	display: inline-block;
+	width:110px;
+	height:35px;
+	position: absolute;
+	right:5px;
+	top:10px;
+	background-color: #ccc;
+}
+#mainBox .graph em img{
+	width:110px;
+	height:35px;
+}
+/*短信验证码*/
+#mainBox .verif em{
+	display: inline-block;
+	width:110px;
+	height:35px;
+	position: absolute;
+	right:5px;
+	top:10px;
+	font:normal 14px/35px "微软雅黑";
+	color: red;
+}
+#mainBox .item .agree input{
+	margin-top:3px ;
+	width:15px;
+	height:15px;
+}
+#mainBox .item .agree{
+	font:14px "微软雅黑";
+	color: #666;
+}
+#mainBox .item .agree a{
+	font:14px "微软雅黑";
+	color: blue;
+}

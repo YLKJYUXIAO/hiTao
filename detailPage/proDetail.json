@@ -1,0 +1,124 @@
+[
+{	
+	"pid":"0",
+	"proRes":"【香港直邮】 skin/伊思 晶钻蜗牛精华面霜 60ml",
+	"titH3":"[特卖] 【香港直邮】 skin/伊思 晶钻蜗牛精华面霜 60ml",
+	"djs":"5",
+	"smaImg":{"img0":"img/sma1-0.jpg",
+			  "img1":"img/sma1-1.jpg",
+			  "img2":"img/sma1-2.jpg"
+			  },			
+	"tabImg":{"img0":"img/sma1-0.jpg",
+			  "img1":"img/sma1-1.jpg",
+			  "img2":"img/sma1-2.jpg"
+			  },
+	"bigImg":{"img0":"img/big1-0.jpg",
+			  "img1":"img/big1-1.jpg",
+			  "img2":"img/big1-2.jpg"
+			  },
+	"price":"115.00",
+	"introPrc":"￥215.00"		  
+},{
+	"pid":"1",
+	"proRes":"【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"titH3":"[特卖] 【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"djs":"4",
+	"smaImg":{"img0":"img/sma2-0.jpg",
+			  "img1":"img/sma2-1.jpg",
+			  "img2":"img/sma2-2.jpg"
+			  },			
+	"tabImg":{"img0":"img/sma2-0.jpg",
+			  "img1":"img/sma2-1.jpg",
+			  "img2":"img/sma2-2.jpg"
+			  },
+	"bigImg":{"img0":"img/big2-0.jpg",
+			  "img1":"img/big2-1.jpg",
+			  "img2":"img/big2-2.jpg"
+			  },
+	"price":"245.00",
+	"introPrc":"￥355.00"	
+},
+{
+	"pid":"2",
+	"proRes":"【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"titH3":"[特卖] 【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"djs":"4",
+	"smaImg":{"img0":"img/list2.jpg",
+			  "img1":"img/list2.jpg",
+			  "img2":"img/list2.jpg"
+			  },			
+	"tabImg":{"img0":"img/list2.jpg",
+			  "img1":"img/list2.jpg",
+			  "img2":"img/list2.jpg"
+			  },
+	"bigImg":{"img0":"img/list2.jpg",
+			  "img1":"img/list2.jpg",
+			  "img2":"img/list2.jpg"
+			  },
+	"price":"135.00",
+	"introPrc":"￥235.00"	
+}
+,
+{
+	"pid":"3",
+	"proRes":"【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"titH3":"[特卖] 【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"djs":"4",
+	"smaImg":{"img0":"img/list6.jpg",
+			  "img1":"img/list6.jpg",
+			  "img2":"img/list6.jpg"
+			  },			
+	"tabImg":{"img0":"img/list6.jpg",
+			  "img1":"img/list6.jpg",
+			  "img2":"img/list6.jpg"
+			  },
+	"bigImg":{"img0":"img/list6.jpg",
+			  "img1":"img/list6.jpg",
+			  "img2":"img/list6.jpg"
+			  },
+	"price":"185.00",
+	"introPrc":"￥285.00"	
+}
+,
+{
+	"pid":"4",
+	"proRes":"【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"titH3":"[特卖] 【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"djs":"4",
+	"smaImg":{"img0":"img/list7.jpg",
+			  "img1":"img/list7.jpg",
+			  "img2":"img/list7.jpg"
+			  },			
+	"tabImg":{"img0":"img/list7.jpg",
+			  "img1":"img/list7.jpg",
+			  "img2":"img/list7.jpg"
+			  },
+	"bigImg":{"img0":"img/list7.jpg",
+			  "img1":"img/list7.jpg",
+			  "img2":"img/list7.jpg"
+			  },
+	"price":"155.00",
+	"introPrc":"￥255.00"	
+}
+,
+{
+	"pid":"5",
+	"proRes":"【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"titH3":"[特卖] 【韩国直邮】 思亲肤 黑石榴晶莹面霜 50g",
+	"djs":"4",
+	"smaImg":{"img0":"img/list8.jpg",
+			  "img1":"img/list8.jpg",
+			  "img2":"img/list8.jpg"
+			  },			
+	"tabImg":{"img0":"img/list8.jpg",
+			  "img1":"img/list8.jpg",
+			  "img2":"img/list8.jpg"
+			  },
+	"bigImg":{"img0":"img/list8.jpg",
+			  "img1":"img/list8.jpg",
+			  "img2":"img/list8.jpg"
+			  },
+	"price":"145.00",
+	"introPrc":"￥255.00"	
+}
+]

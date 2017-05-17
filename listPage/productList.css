@@ -1,0 +1,254 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+/*主体部分*/
+#mainBox{
+	width:100%;
+	/*height:7950px;*/
+	background-color: #f5f5f5;
+	overflow: hidden;
+}
+#mainBox .main{
+	width:1200px;
+	/*height:7950px;*/
+	padding-left:10px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#mainBox .listTop{
+	width:1180px;
+	height:210px;
+}
+#mainBox .listTop p{
+	width:1180px;
+	height:45px;
+	font:14px "微软雅黑";
+	line-height: 45px;		
+}
+#mainBox .listTop p a{
+	font:14px "微软雅黑";
+	color: #666666;
+}
+#mainBox .listTop p a:hover{
+	text-decoration: underline;
+}
+#mainBox .listTop h2{
+	width:1160px;
+	height:40px;
+	background-color: #dddddd;
+	border-radius:5px 5px 0 0;
+	padding-left:20px;
+	font:14px/40px "微软雅黑";
+}
+#mainBox .listTop h2 i{
+	font:normal 14px/40px "微软雅黑";
+	color: red;
+}
+#mainBox .listTop dl{
+	width:1180px;
+	height:125px;
+	background-color: #fff;
+	font:14px/40px "微软雅黑";
+	color: #000;
+	border-radius: 0 0 5px 5px;
+}
+#mainBox .listTop dl a{
+	font:14px "微软雅黑";
+	color: #666666;
+}
+#mainBox .listTop dl a:hover{
+	color: red;
+}
+#mainBox .listTop dl dt{
+	width:1140px;
+	height:40px;
+	padding-left:40px;
+	border-bottom: 1px solid #666666;
+	
+}
+#mainBox .listTop dl dt a{
+	margin:0 15px;
+}
+#mainBox .brand{
+	width:1100px;
+	padding:0 40px ;
+	height:40px;
+	position: relative;
+	overflow: hidden;
+}
+#mainBox .brand a,#mainBox .price a{
+	margin:0 10px;
+}
+#mainBox .brand h4{
+	width:60px;
+	height:40px;
+	position: absolute;
+	right:-10px;
+	top:0px;
+	cursor: context-menu;
+}
+#mainBox .price{
+	width:1140px;
+	height:40px;
+	padding-left:40px;
+}
+#mainBox .listCenter{
+	width:1140px;
+	height:40px;
+	margin-top:20px;
+	padding-left:40px ;
+	background-color: #fff;
+}
+/*中部*/
+#mainBox .listCenter h3,h4{
+	float: left;
+}
+#mainBox .listCenter h3{
+	font:14px/40px "微软雅黑";
+	color: #000;
+}
+#mainBox .listCenter h4{
+	width:75px;
+	height:30px;
+	margin:4px 10px;
+	font:14px/30px "微软雅黑";
+	color: #666;
+	text-align: center;
+	border:1px solid #666;
+	position: relative;
+}
+#mainBox .listCenter h4 i{
+	display: block;
+	width:1px;
+	height:1px;
+	border-left:5px solid rgba(204,0,0,0);
+	border-right:5px solid rgba(204,0,0,0);	
+	position: absolute;	
+	right:5px;
+}
+
+/*商品列表*/
+#mainBox .productList{
+	width:1210px;
+	/*height:7650px;*/
+	overflow: hidden;
+	padding-bottom:50px;
+}
+#mainBox .listItem{
+	width:285px;
+	height:445px;
+	float:left;
+	background-color: #fff;
+	margin:20px 13px 0 0;	
+	position: relative;	
+	/*box-shadow: 0 0 20px #B3B2B2;*/
+}
+#mainBox .listItem:hover{
+	box-shadow: 0 0 20px #B3B2B2;
+	transition: all 0.3s ease-in-out;
+}
+
+/*底部立即抢购的移入移出*/
+#mainBox .listItem:hover .onBott{
+	background: url(img/beijing.png) no-repeat -132px -112px;
+}
+#mainBox .imgBox{
+	width:270px;
+	height:290px;
+	position: relative;
+	overflow: hidden;
+}
+#mainBox .imgBox img{
+	width:270px;
+	height:270px;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+#mainBox .listItem h2{
+	width:265px;
+	height:30px;
+	padding-left: 20px;
+}
+#mainBox .listItem h2 img{
+	float:left;	
+	width:25px;
+	height:25px;
+	border-radius: 15px;
+	border: 1px solid #ccc;
+}
+#mainBox .listItem h2 em{
+	float:left;	
+	width:225px;
+	height:30px;
+	margin-left:10px;
+	font:normal 14px/30px "微软雅黑";
+}
+#mainBox .listItem h3{
+	width:245px;
+	height:45px;
+	padding:0 20px;
+	font:18px "微软雅黑";
+}
+#mainBox .listItem h4{
+	width:120px;
+	height:60px;
+	padding-left: 20px;
+	font: 18px "微软雅黑";
+	color: #E30485;
+	margin-top: 15px;
+}
+#mainBox .listItem h4 em{
+	font:24px/40px "微软雅黑";
+	color: #E30485;
+}
+#mainBox .listItem h4 b{
+	font:normal 14px "微软雅黑";
+	color: #666;
+	text-decoration: line-through;
+}
+/*底部的span*/
+#mainBox .onBott{
+	position: absolute;
+	right:20px;
+	bottom: -10px;
+	display: block;
+	width:58px;
+	height:58px;
+	border: 1px solid #CCC;
+	border-radius: 30px;
+	background: url(img/beijing.png) no-repeat -72px -112px;
+}
+/*中部的span*/
+#mainBox .onCent{
+	width:130px;
+	height:130px;
+	background-color: #000;
+	fliter:alpha(opacity=50);
+	opacity: 0.5;
+	border-radius: 65px;
+	text-align: center;
+	font:24px/130px "微软雅黑";
+	color: #fff;
+	position: absolute;
+	left:70px;
+	top:100px;
+	z-index:10;
+	display: none;
+}
+/*右侧的span*/
+#mainBox .hotBuy{
+	width:50px;
+	height:30px;
+	font:14px/30px "微软雅黑";
+	color: #fff;
+	text-align: center;
+	background-color: #E30485;
+	border-radius: 20px 0 0 20px;
+	position: absolute;
+	right:-5px;
+	top:200px;
+	z-index:10;
+}

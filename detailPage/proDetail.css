@@ -1,0 +1,531 @@
+/*商品详情展示部分*/
+*{
+	padding:0;
+	margin: 0;
+	font-style: normal;
+}
+ul,ol{
+	list-style: none;
+}
+#proDetBox{
+	width:100%;
+	height:740px;
+	background-color: #fff;
+}
+#proDetBox .proDet{
+	width:1000px;
+	height:740px;
+	margin:0 auto;
+}
+/*当前商品名*/
+#proDetBox .proDet h2{
+	width:1000px;
+	height:40px;
+	padding-top:25px;
+	font:14px "微软雅黑";
+	color: #666;
+}
+#proDetBox .proDet h2 i{
+	font:normal 14px "微软雅黑";
+	color: #666;
+	padding:0 10px;
+}
+/*标题*/
+#proDetBox .proTit{
+	width:1000px;
+	height:50px;
+}
+
+#proDetBox .proTit img{
+	display: block;
+	float: left;
+	width:40px;
+	height:40px;
+	border: 1px solid #666;
+	border-radius: 20px;
+}
+#proDetBox .proTit h3{
+	float: left;
+	font:20px/40px "微软雅黑";
+}
+#proDetBox .proDjs{
+	float: left;
+	width:240px;
+	height:50px;	
+	padding-left: 20px;
+	margin-left:170px;
+	background-color: #f5f5f5;
+	border-radius: 25px 0 0 25px;
+	font:14px/50px "微软雅黑";
+	color: #666;
+}
+#proDetBox .proDjs img{
+	display: inline-block;
+	margin:15px 5px 0 0;
+	width:25px;
+	height:25px;
+	border: none;
+}
+#proDetBox .proDjs i{
+	font:normal 20px/50px "微软雅黑";
+	color: #666;
+}
+#proDetBox .proMess{
+	width:1000px;
+	height:605px;
+	margin-top:20px;
+}
+#proDetBox .proFdj{
+	float: left;
+	width:495px;
+	height:605px;
+	position: relative;
+}
+/*遮罩层*/
+#proDetBox .markFdj{
+	width:490px;
+	height:490px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	background-color: #000;
+	filter:alpha(opacity=0);
+	opacity:0;
+	z-index:5;
+}
+/*小图片*/
+#proDetBox .smaPic{
+	width:490px;
+	height:490px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	
+}
+#proDetBox .smaItem{
+	width:490px;
+	height:490px;
+	display: none;
+}
+#proDetBox .smaItem.show{
+	display: block;
+}
+
+/*tab切换图片*/
+#proDetBox .tabImg{	
+	width:250px;
+	height:62px;
+	margin-top:25px;
+}
+#proDetBox .tabImg li{
+	float: left;
+	width:60px;
+	height:60px;
+	margin-right:20px;
+	
+}
+#proDetBox .tabImg li.active{
+	border: 1px solid #666;
+	border-radius: 5px;
+}
+#proDetBox .tabImg li img{
+	width:58px;
+	height:58px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+/*分享*/
+#proDetBox .share{
+	width:130px;
+	height:35px;
+	padding-top: 10px;
+	font:14px "微软雅黑";
+/*	border: 1px solid #000;*/
+	float:right;
+}
+#proDetBox .share a{
+	display: block;
+	width:25px;
+	height:25px;
+	float: right;	
+	margin-right:2px;
+}
+#proDetBox .share img{
+	width:25px;
+	height:25px;
+}
+/*浮动块*/
+#proDetBox .floor{
+	width:245px;
+	height:245px;
+	background-color: #000;
+	filter:alpha(opacity=20);
+	opacity: 0.2;
+	position: absolute;
+	left:0px;
+	top:0px;
+	display: none;
+}
+/*放大区域*/
+#proDetBox .bigPic{
+	width:360px;
+	height:360px;
+	border: 1px solid #ccc;
+	position: absolute;
+	right:-370px;
+	top:0px;
+	overflow: hidden;
+	display: none;
+}
+#proDetBox .bigItem{
+	width:720px;
+	height:720px;
+	position: absolute;
+	left:0px;
+	top:0px;	
+	display: none;
+	
+}
+#proDetBox .bigItem.show{
+	display: block;
+}
+/*商品信息 右侧部分*/
+#proDetBox .messRight{
+	float: left;
+	width:470px;
+	height:490px;
+	margin-left:20px;
+}
+#proDetBox .messRight h3{
+	width:470px;
+	height:40px;
+	font:bold 18px/40px "微软雅黑";
+}
+#proDetBox .messRight h3 img{
+	width:40px;
+	height:40px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+}
+#proDetBox .messRight span{	
+	display: block;
+	width:470px;
+	height:70px;
+	margin-top:20px;
+	font:16px "微软雅黑";
+}
+
+#proDetBox .messRight h4{
+	font:bold 24px "微软雅黑";
+	color: #E30485;
+	margin-top:30px;
+}
+#proDetBox .messRight h4 i{
+	font:16px "微软雅黑";
+	color: #E30485;
+}
+#proDetBox .messRight h5{
+	font:normal 14px "微软雅黑";
+	color: #666;
+	margin-top:10px;
+}
+#proDetBox .messRight h5 i{
+	font:normal 14px "微软雅黑";
+	text-decoration: line-through;
+}
+#proDetBox .post{
+	width:150px;
+	height: 20px;
+	margin-top:10px;
+}
+#proDetBox .post em{
+	display: inline-block;
+	padding:0 10px;
+	height:20px;
+	font:16px "微软雅黑";
+	
+	border-radius: 5px;
+}
+#proDetBox .post em.col{
+	background-color: #E30485;
+	color: #fff;
+}
+#proDetBox .messRight h6{
+	font:16px "微软雅黑";
+	padding:20px 0px;
+	border-bottom: 2px solid #000;
+}
+#proDetBox .proNum{
+	width:470px;
+	height:40px;
+	margin-top:20px;
+	font:14px "微软雅黑";
+	color: #666;
+}
+
+#proDetBox .proNum em{
+	display: block;
+	float: left;
+	padding-top: 5px;
+	font:14px "微软雅黑";
+}
+#proDetBox .inpBox{
+	float: left;
+	width:150px;
+	height:30px;
+}
+#text,#prev,#next{
+	float: left;
+	font:14px/30px "微软雅黑";
+	text-align: center;
+	outline: none;
+}
+#text{
+	width:50px;
+	height:28px;
+	
+}
+#prev{
+	width:30px;
+	height:30px;
+	border: 1px solid #ccc;
+	border-right: none;
+	border-radius: 5px 0 0 5px;
+	margin-left: 20px;
+}
+#next{	
+	width:30px;
+	height:30px;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-radius:  0 5px 5px 0 ;
+}
+#proDetBox .addBuy .buyBtn{
+	display: block;
+	float: left;
+	width:175px;
+	height:50px;
+	text-align: center;
+	font:20px/50px "微软雅黑";
+	color: #fff;
+	border-radius: 50px;
+	background-color: #000;
+	cursor: pointer;
+}
+#proDetBox .addBuy .addBtn{
+	display: block;
+	float: left;
+	width:155px;
+	height:50px;
+	margin-left: 20px;
+	padding-left:20px;
+	text-align: center;
+	font:20px/50px "微软雅黑";
+	color: #fff;
+	border-radius: 50px;
+	background:#E10482 url(img/40.png) no-repeat 20px 15px;
+	cursor: pointer;
+}
+/*商品评价及介绍部分*/
+
+#introdBox{
+	width:100%;
+	/*height:5050px;*/
+	padding-top:20px;
+	background-color: #f5f5f5;
+	overflow: hidden;
+}
+#introdBox .introd{
+	width:1000px;
+	/*height:5050px;*/
+	padding-bottom: 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*猜你喜欢*/
+
+#introdBox .gLike{
+	width:240px;
+	height:800px;
+	float: left;
+	background-color: #fff;
+}
+#introdBox .gLike h2{
+	width:240px;
+	height:40px;
+	font:18px/40px "微软雅黑";
+	border-bottom: 2px solid #000;
+}
+#introdBox .gLike dl{
+	width:200px;
+	height:85px;
+	margin: 0 20px;
+	padding-top: 25px;
+	border-bottom: 1px solid #ccc;
+}
+#introdBox .gLike dt{
+	width:64px;
+	height:64px;
+	float: left;
+}
+#introdBox .gLike dt img{
+	width:64px;
+	height:64px;
+}
+#introdBox .gLike dd{
+	float:left;
+	width:125px;
+	height:62px;
+	margin-left: 10px;
+}
+#introdBox .gLike dd h3{
+	font:12px "微软雅黑";
+	margin-bottom: 10px;
+}
+#introdBox .gLike dd span{
+	padding-top: 10px;
+	font:12px "微软雅黑";
+	color: #E30485;
+}
+#introdBox .introdRight{
+	width:725px;
+	/*height:5000px;*/
+	background-color: #fff;
+	float: left;
+	margin-left: 30px;
+	overflow: hidden;
+}
+#introdBox .introdRight ul{
+	width:725px;
+	height:40px;
+	background-color: #F5F5F5;
+	border-bottom: 2px solid #000;
+}
+#introdBox .introdRight ul li{
+	width:80px;
+	height:40px;
+	text-align: center;
+	font:16px/40px "微软雅黑";
+	margin-left:45px;
+	float: left;
+	cursor: pointer;
+}
+#introdBox .introdRight ul li:hover{
+	color: #E30485;
+	border-bottom: 3px solid #E30485;
+}
+#introdBox .introdRight ul li.active{
+	color: #E30485;
+	border-bottom: 3px solid #E30485;
+}
+/*切换项*/
+#introdBox .intItem{
+	display: none;
+}
+#introdBox .intItem.show{
+	display: block;
+}
+#introdBox .intFirst{
+	width:725px;
+	/*display: none;*/
+}
+#introdBox .intFirst h2{
+	width:415px;
+	height:30px;
+	background: url(img/detail.png) no-repeat 15px -165px;
+}
+#introdBox .intMessage{
+	width:725px;
+	height:270px;
+}
+#introdBox .intMessage dl{
+	margin-top: 30px;
+	width:260px;
+	height:190px;
+	float: left;
+}
+#introdBox .intMessage dd{
+	font:14px "微软雅黑";
+	color: #666;
+	padding-left:30px;
+	margin-top:15px ;
+}
+#introdBox .intMessage i{
+	font:14px "微软雅黑";
+	padding-left:10px;
+	color: #000;
+}
+#introdBox .intMessage img{
+	display: block;
+	width:190px;
+	height: 190px;
+	float: left;
+	margin:30px 0 0 160px;
+}
+#introdBox .intFirst h3{
+	width:425px;
+	height:30px;
+	background: url(img/detail.png) no-repeat 15px -191px;
+}
+#introdBox .intro-imgBox{
+	margin-top: 20px;
+}
+#introdBox .intro-imgBox li{
+	width:725px;
+	
+}
+#introdBox .intro-imgBox li img{
+	width:725px;
+	display: block;
+}
+/*商品评价部分*/
+#introdBox .intTwo{
+	width:625px;
+	height:1550px;
+	padding:0 50px;
+}
+#introdBox .intTwo dl{
+	width:620px;
+	height:120px;
+	padding-top: 30px;
+	border-bottom: 1px solid #ccc;
+}
+#introdBox .intTwo dt{
+	float:left;
+	width:60px;
+	height:60px;
+	clear: both;
+	border-radius: 30px;
+}
+#introdBox .intTwo dt img{
+	width:60px;
+	height:60px;
+	border-radius: 30px;
+}
+#introdBox .intTwo dd{
+	float: left;
+	width:540px;
+	height:145px;
+	margin-left: 20px;
+}
+#introdBox .intTwo dd h2{
+	width:250px;
+	height:20px;
+	padding-top:8px;
+	font:14px "微软雅黑";
+}
+#introdBox .intTwo dd i{
+	padding:0 20px;
+	color: #666;
+}
+#introdBox .intTwo dd span{
+	font:14px/20px "微软雅黑";
+}
+
+
+
+
+
+
+
+
+

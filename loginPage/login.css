@@ -1,0 +1,387 @@
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+#logoBox{
+	width:100%;
+	height:144px;
+	background:url(img/bg_head.jpg) no-repeat -150px 0px;
+}
+#logoBox .logo{
+	width:1190px;
+	height:109px;
+	padding-top:35px;
+	margin:0 auto;
+}
+#logoBox .logo h2,#logoBox .logo h3{
+	float:left;
+}
+#logoBox .logo h3{
+	margin-top:20px;
+}
+
+/*第二部分*/
+#joinBox{
+	width:100%;
+	height:150px;
+	background-color: #f5f5f5;
+}
+#joinBox .join{
+	width:990px;
+	height:100px;
+	padding-top:50px;
+	margin:0 auto;
+}
+#joinBox h3{
+	float:left;
+	width:160px;
+	height:45px;
+	background:url(../img/login.png) no-repeat 0px 0px;
+}
+#joinBox h4{
+	float:left;
+	width:85px;
+	height:35px;
+	padding-top:5px;
+	margin-left:20px;
+	font:14px "微软雅黑";
+}
+#joinBox span{
+	float:right;
+	font:14px "微软雅黑";
+	padding-top:10px;
+}
+#joinBox h5{
+	float:right;
+	width:75px;
+	height:24px;
+	border: 1px solid #E30485;
+	border-radius: 25px;
+	text-align: center;
+	padding-top:6px;
+	background-color: #fff;
+	cursor: pointer;
+}
+#joinBox h5:hover{
+	background-color: #E30485;
+}
+#joinBox h5 a{
+	color: #E30485;
+	font:14px "微软雅黑";
+}
+#joinBox h5:hover a{
+	color: #fff;
+}
+
+
+
+
+
+/*sideBar部分*/
+
+
+/*#sideBar{
+	width:35px;
+	height:700px;
+	position: fixed;
+	right:0px;
+	top:0px;
+	background-color: #000;
+	z-index:20;
+}
+
+#sideBar ul{
+	margin-top:150px;
+}
+#sideBar ul li{
+	position: relative;
+}
+*/
+
+/*servce*/
+/*#sideBar .servce{
+	height:120px;
+	background: url(img/beijing.png) no-repeat -35px 0px;
+}
+#sideBar .servce span{
+	position: absolute;
+	right:50px;
+	top:0px;
+	display: block;
+	padding:20px 20px 0 10px;
+	width:100px;
+	height:100px;
+	background-color: #fff;
+	font:12px "微软雅黑";
+	display: none;
+}
+#sideBar .servce span em,#sideBar .collect span em,#sideBar .coupon span em,#sideBar .code span em{
+	position: absolute;
+	right: -10px;
+	bottom: 2px;
+	border-top:10px solid rgba(204,0,0,0);
+	border-bottom:10px solid rgba(204,0,0,0);
+	border-left:10px solid #fff;
+}
+*/
+/*购物车*/
+/*#sideBar .cart{
+	position: relative;
+	height:120px;
+	background: url(img/beijing.png) no-repeat 0px -120px;
+}
+#sideBar .cart:hover{
+	background: url(img/beijing.png) no-repeat -35px -120px;
+}
+#count{
+	position: absolute;
+	left:8px;
+	top:89px;
+	width:20px;
+	height:20px;
+	font:10px/20px "微软雅黑";
+	color: red;
+	text-align: center;
+}*/
+/*我的收藏*/
+/*#sideBar .collect{
+	margin-top:10px;
+	height:30px;
+	background: url(img/beijing.png) no-repeat 0px -240px;
+}
+#sideBar .collect:hover{
+	background: url(img/beijing.png) no-repeat -35px -241px;
+}
+#sideBar .collect span{
+	position: absolute;
+	right:50px;
+	top:0px;
+	font:14px/30px "微软雅黑";
+	color: red;
+	width:100px;
+	height:30px;
+	background-color: #fff;
+	text-align: center;
+	display: none;
+}*/
+
+/*主体部分*/
+#mainBox{
+	width:100%;
+	height:635px;
+	background-color: #fff;
+}
+#mainBox .main{
+	width:990px;
+	height:585px;
+	padding-top:50px;
+	margin: 0 auto;
+}
+#mainBox img{
+	display: block;
+	float: left;
+}
+#mainBox .selBox{
+	float: left;
+	width:340px;
+	height:585px;
+}
+#mainBox .selBox ul{
+	width:290px;
+	height:50px;
+	border-bottom: 2px solid #000;
+	padding-left:50px;
+}
+#mainBox .selBox ul li{
+	float:left;
+	text-align: center;
+	width:120px;
+	height:50px;
+	font:18px/50px "微软雅黑";
+	background-color: #fff;	
+}
+#mainBox .selBox ul li.current{
+	border: 2px solid #000;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+}
+#mainBox .item{
+	width:340px;
+	height:400px;
+	display: none;
+}
+#mainBox .item.show{
+	display: block;
+}
+#mainBox .item p{
+	width:340px;
+	height:52px;
+	border: 2px solid #666;
+	margin-top:30px;
+	position: relative;
+}
+/*隐藏的提示信息模块*/
+#mainBox .item p i{
+	display: inline-block;
+	widht:310px;
+	height:16px;
+	background:url(img/tip.jpg) no-repeat; 
+	position: absolute;
+	left:0px;
+	top:60px;
+	padding-left:30px;
+	font: normal 14px/16px "微软雅黑";
+	color: #E30485;
+	display: none;
+}
+#mainBox .item p span{
+	float:left;
+	width:75px;
+	height:50px;
+	text-align: center;
+	font:14px/50px "微软雅黑";
+	background-color: #f5f5f5;
+	border: 1px solid #666;
+	border-right:none ;
+}
+#mainBox .item p input{
+	float:left;
+	width:260px;
+	height:48px;
+	outline: none;
+}
+#mainBox .item h3{
+	float:right;
+	width:100px;
+	height:30px;
+	margin-top:20px;
+}
+#mainBox .item h3 a{
+	font:14px "微软雅黑";
+	color: blue;
+}
+#mainBox .item h4{
+	width:160px;
+	height:40px;
+	margin:80px 0 0 90px;
+	border-radius: 40px;
+	background-color: #E30485;
+	text-align: center;
+	
+}
+#mainBox .item h4 a{
+	font:14px/40px "宋体";
+	color: #fff;
+}
+/*图形码*/
+
+#mainBox .graph em{
+	display: inline-block;
+	width:110px;
+	height:35px;
+	position: absolute;
+	right:5px;
+	top:10px;
+	background-color: #ccc;
+}
+#mainBox .graph em img{
+	width:110px;
+	height:35px;
+}
+/*短信验证码*/
+#mainBox .verif em{
+	display: inline-block;
+	width:110px;
+	height:35px;
+	position: absolute;
+	right:5px;
+	top:10px;
+	font:normal 14px/35px "微软雅黑";
+	color: red;
+}
+
+/*公司简介*/
+#profixBox{
+	width:100%;
+	height:38px;
+	background-color: #000;
+}
+#profixBox .profix{
+	width:1190px;
+	height:38px;
+	margin:0 auto;
+}
+#profixBox .phone,#profixBox .phone img,#profixBox .phone h4{
+	float:left;
+}
+#profixBox .phone h4{
+	margin:5px 0 0 5px;
+	color: #e30485;
+}
+#profixBox ul{
+	float:right;
+}
+#profixBox ul li{
+	float:left;
+	width:70px;
+	height:38px;
+	line-height: 38px;
+	text-align: center;	
+}
+#profixBox ul li:hover{
+	background-color: #DE0BA0;
+}
+#profixBox ul li a{
+	font:12px "微软雅黑";
+	color: #fff;
+}
+
+/*尾部*/
+
+#footBox{
+	width:100%;
+	height:130px;
+	background-color: #fff;
+}
+#footBox .foot{
+	width:1190px;
+	height:130px;
+	margin:0 auto;
+}
+#footBox .foot p{
+	width:1190px;
+	height:60px;
+	text-align: center;
+	font:12px/60px "微软雅黑";
+	color: #B3B2B2;
+}
+#footBox .footImg{
+	width:1190px;
+	height:47px;
+	border: 1px solid #ccc;
+}
+#footBox .ImgBox{
+	width:810px;
+	height:47px;	
+	margin:5px auto;
+}
+#footBox .ImgBox a{
+	display: block;
+	float:left;
+	height:35px;
+}
+#footBox .ImgBox a+a{
+	border-left:1px solid #ccc;
+}
+#footBox .ImgBox a img{
+	margin:0 30px;
+}
+
+
+
